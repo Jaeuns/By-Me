@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'EASTARJET-Medium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/EASTARJET-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+#main {
+  font-size: 26px; /* 글자 크기 저장 */
+  font-family: 'Nanum Pen Script', cursive;
+  text-align: center; /* 중앙 정렬 */
+  background-color: rgb(253, 252, 252); /* 배경색 흰색 지정 */
+  width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  }
+#color1 {
+  color: rgba(225, 225, 54, 0.639);
+  text-shadow: 2px 2px #ffa500;
+}
+#round1 { border-radius: 20px; }
+#round2 { border-radius: 50%; }
+
+#contentsBox {
+  width : 100%;
+  margin: auto;
+}
+
+#contents1, #contents2, #contents3 {
+  float: left;
+  box-sizing: border-box;
+  width: 30%;
+  height: 30%;
+  border: 5px;
+  padding: 10px;
+  margin: 5px;
+}
+
+#contents1:hover #contentsIntro {
+  opacity: 1;
+  transform: translateY(-100px);
+}
+
+#contents1Img {
+  float: left;
+  padding: 0;
+  margin: 10px;
+  overflow: hidden;
+  position: relative; /* Intro의 부모로써, absolute 적용하기위해*/
+}
+
+#contents1Intro, #contents2Intro, #contents3Intro {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6,); /* 반투명한 검정 배경 */
+  opacity: 0; /* 화면에 보이지 않게 */
+  transition: all 0.6s ease-in-out; /* 부드럽게 나타나는 트랜지션 */
+  z-index: 10;
+}
+
+#contentsbox {
+  color:#fff;
+  text-align: center;
+}
+
+#place {
+  margin: auto;
+}
+
+* { box-sizing: border-box; }
+/* 모든 요소에 테두리까지 포함한 너비값 지정 */
+nav ul { list-style: none;} /* 불릿과 숫자 없앰 */
+nav ul li {
+  display: inline-block; /* 인라인 레벨 요소와 블록 레벨 요소 지정 */
+  padding: 10px;
+  margin: 10px 10px;
+}
+
+nav ul li a:link { /* 방문한 링크와 방문하지 않은 링크 설정 */
+  display: block;
+  font-size: 20px;
+  color: #000;
+  padding: 10px;
+  text-decoration: none; /* 밑줄 없앰 */
+  text-align: center;
+}
